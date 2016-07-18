@@ -20,3 +20,19 @@ class Record:
             f.write("%s 变量于北京时间 %s 被修改, %s = %s\n" % \
                     (self.name, time.ctime(), self.name, str(value)))
         self.val = value
+
+
+
+>>> class Test:
+        x = Record(10, 'x')
+        y = Record(8.8, 'y')
+
+>>> test = Test()
+>>> test.x
+10
+>>> test.y
+8.8
+>>> test.x = 123
+>>> test.x = 1.23
+>>> test.y = "I love FishC.com!"
+>>>
